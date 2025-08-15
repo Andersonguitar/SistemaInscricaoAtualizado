@@ -129,7 +129,7 @@
 
     <script>
         // Substitua estes valores pelos seus
-        const FORM_ID = '1AXDZdnx1WDAYYeaEpAsLujvBLBCBZbzqEam4HNS0Buk';
+        const FORM_ID = '1qYUNoknmg6VYnKO6x1gYfWkorWzncE5AwDFMUL_JmUU';
         const API_KEY = 'AIzaSyDMGrCp3okYV5Jb4iQS0fRmUStLSHAvrAg';
 
         // Função para carregar os dados do formulário
@@ -230,7 +230,7 @@
                 li.className = 'inscrito-item';
 
                 // Foto (coluna D)
-                const fotoUrl = inscrito[3] || '';
+                const fotoUrl = inscrito[4] || '';
                 const fotoElement = document.createElement('img');
                 fotoElement.className = 'inscrito-foto';
                 fotoElement.src = fotoUrl || 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MCIgaGVpZ2h0PSI1MCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM5OTkiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNMjAgMjF2LTJhNCA0IDAgMCAwLTQtNEg4YTQgNCAwIDAgMC00IDR2MiI+PC9wYXRoPjxjaXJjbGUgY3g9IjEyIiBjeT0iNyIgcj0iNCIgLz48L3N2Zz4=';
@@ -251,7 +251,7 @@
                 // Líder (coluna E)
                 const liderElement = document.createElement('div');
                 liderElement.className = 'inscrito-lider';
-                liderElement.textContent = `Líder: ${inscrito[4] || '-'}`;
+                liderElement.textContent = `Igreja: ${inscrito[3] || '-'}`;
 
                 li.appendChild(fotoElement);
                 li.appendChild(nomeElement);
